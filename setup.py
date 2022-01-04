@@ -79,7 +79,7 @@ setup(
                   libraries=['pg_query'],
                   include_dirs=[LIBPG_QUERY_DIR, INCLUDE_DIR, VENDOR_DIR],
                   library_dirs=[LIBPG_QUERY_DIR]),
-    ]),
+    ], force=True),
 
     install_requires=[
         'setuptools',
